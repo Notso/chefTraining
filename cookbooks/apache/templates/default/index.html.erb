@@ -1,0 +1,9 @@
+<html>
+    <body>
+        <h1>Welcome to <%= node["company"] %>! </h1>
+        <h2>Hello from <%= node["fqdn"] %> ! SWEET</h1>
+    </body>
+    <p>
+       Server Memory in MB: <%= node["memory"]["total"].to_i / 1024 %>
+    </p>
+</html>
